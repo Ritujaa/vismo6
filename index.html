@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="scripts.js" defer></script> 
+    <script type="module" src="three.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+</head> 
+<body> 
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">Lensmart</a>
+                <button class="navbar-toggler" onclick="toggleNavbar()">&#9776;</button>
+                <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#card-body">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#container3D">3d Try on</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container"><br>
+            <h1>See Clearly, Live Vibrantly</h1><br>
+            <p class="lead">Enhance your vision with style.</p><br>
+            <a href="#features" class="btn">Discover More</a><br>&nbsp;
+
+            <div class="bg-image">
+                <div class="slideshow-container">
+                    
+                    <div class="mySlides fade">
+                        <img src="https://static1.lenskart.com/media/desktop/img/harmony/28-jun-24/Web%20Banner%201920x520.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://static1.lenskart.com/media/desktop/img/2024/may/prog/New%20Web%20Banner.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://static1.lenskart.com/media/desktop/img/2024/jun/eyetest/Turban-DesktopBanner.jpg" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="card-body">
+        <div class="wrapper"> 
+            <i id="left" class="fas fa-angle-left"></i> 
+            <ul class="carousel"> 
+                <li class="card"> 
+                    <div class="img"><img src="https://static1.lenskart.com/media/desktop/img/May22/glasses.jpg" alt="" draggable="false"> </div> 
+                    <h2>eyeglasses</h2> 
+                    <span></span> 
+                </li> 
+                <li class="card"> 
+                    <div class="img"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6acc4R6qM-Jh2hmEJnJ9In0ygZMpVD9vhEODVrzTQrXzqyfH2" alt="" draggable="false"> </div> 
+                    <h2>zero-power screenglasses</h2> 
+                    <span></span> 
+                </li> 
+                <li class="card"> 
+                    <div class="img"><img src="https://static1.lenskart.com/media/desktop/img/May22/Sunnies.jpg" alt="" draggable="false"> </div> 
+                    <h2>sunglasses</h2> 
+                    <span></span> 
+                </li> 
+                <li class="card"> 
+                    <div class="img"><img src="https://static1.lenskart.com/media/desktop/img/May22/computer-glasses.jpg" alt="" draggable="false"> </div> 
+                    <h2>kids</h2>
+                    <span></span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6OyZbTuQaiJj_BWWwOz5SzO-LzAnGTQ8ekkU18lVCIr3PsKbb" alt="" draggable="false"> </div> 
+                    <h2>Lenses</h2>
+                    <span></span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyIBNVzLiewAYw9DB8cyjbK4FU7B3t7F6v6JF5rK2y8FBm10LE" alt="" draggable="false"> </div> 
+                    <h2>Goggles</h2> 
+                    <span></span> 
+                </li> 
+            </ul> 
+            <i id="right" class="fas fa-angle-right"></i> 
+        </div> 
+    </section>
+    <br>
+    <section id="container3D"></section>
+   
+</body> 
+</html>
